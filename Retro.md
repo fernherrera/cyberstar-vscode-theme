@@ -1,6 +1,7 @@
 # Retro - Dark
 
 ## Editors
+
 #ECECEC
 #CCCCCC
 #A0A0A0
@@ -11,11 +12,8 @@
 #EC7900
 #7d4200
 
-
-
-----------------------
-
 ## Syntax
+
 #FFFFFF
 #CCCCCC
 #EBAB63
