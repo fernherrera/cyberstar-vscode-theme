@@ -1,0 +1,105 @@
+{
+  "tokenColors": [
+    {
+      "name": "comments",
+      "scope": [
+        "comment",
+        "comment markup.link",
+        "comment.line.double-slash",
+        "comment.block.documentation",
+        "punctuation.definition.comment"
+      ],
+      "settings": {
+        "fontStyle": "italic",
+        "foreground": "#cccccc"
+      }
+    },
+    {
+      "name": "Keywords",
+      "scope": [
+        "keyword",
+        "keyword.control",
+        "keyword.operator",
+        "keyword.declaration"
+      ],
+      "settings": {
+        "foreground": "#cccccc"
+      }
+    },
+    {
+      "name": "Varibles",
+      "scope": [
+        "varible",
+        "variable.language",
+        "variable.parameter",
+        "variable.function"
+      ],
+      "settings": {
+        "foreground": "#cccccc"
+      }
+    },
+    {
+      "name": "Constants",
+      "scope": [
+        "constant",
+        "constant.numeric",
+        "constant.lnguage",
+        "constant.character.escape"
+      ],
+      "settings": {
+        "foreground": "#cccccc"
+      }
+    },
+    {
+      "name": "Entity",
+      "scope": [
+        "entity.name",
+        "entity.name.section",
+        "entity.name.tag",
+        "entity.other.attribute-name",
+        "entity.other.inherited-class"
+      ],
+      "settings": {
+        "foreground": "#cccccc"
+      }
+    },
+    {
+      "name": "Strings",
+      "scope": [
+        "string"
+      ],
+      "settings": {
+        "foreground": "#cccccc"
+      }
+    },
+    {
+      "name": "Storage",
+      "scope": [
+        "storage.type",
+        "storage.modifier"
+      ],
+      "settings": {
+        "foreground": "#cccccc"
+      }
+    },
+    {
+      "name": "Support",
+      "scope": [
+        "support"
+      ],
+      "settings": {
+        "foreground": "#cccccc"
+      }
+    },
+    {
+      "name": "Invalid",
+      "scope": [
+        "invalid",
+        "invalid.deprecated"
+      ],
+      "settings": {
+        "foreground": "#cccccc"
+      }
+    }
+  ]
+}

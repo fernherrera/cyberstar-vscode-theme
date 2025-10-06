@@ -1,2 +1,2 @@
-# cyberstar
+# CyberStar
 VS Code theme
