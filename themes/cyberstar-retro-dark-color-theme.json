@@ -1,5 +1,5 @@
 {
-  "name": "CyberStar - Dark Void",
+  "name": "CyberStar - Retro Dark",
   "type": "dark",
   "semanticHighlighting": true,
   "semanticTokenColors": {
@@ -14,6 +14,16 @@
     }
   },
   "tokenColors": [
+    {
+      "name": "comments",
+      "scope": [
+        "comment",
+        
+      ],
+      "settings": {
+        "foreground": "#7f848e"
+      }
+    },
     {
       "name": "unison punctuation",
       "scope": "punctuation.definition.delayed.unison,punctuation.definition.list.begin.unison,punctuation.definition.list.end.unison,punctuation.definition.ability.begin.unison,punctuation.definition.ability.end.unison,punctuation.operator.assignment.as.unison,punctuation.separator.pipe.unison,punctuation.separator.delimiter.unison,punctuation.definition.hash.unison",
@@ -1700,15 +1710,7 @@
         "foreground": "#98c379"
       }
     },
-    {
-      "name": "comments",
-      "scope": [
-        "beginning.punctuation.definition.list.markdown.xi"
-      ],
-      "settings": {
-        "foreground": "#7f848e"
-      }
-    },
+
     {
       "name": "link",
       "scope": [

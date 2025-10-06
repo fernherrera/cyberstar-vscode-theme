@@ -1,5 +1,6 @@
 {
   "tokenColors": [
+    // Common tokens
     {
       "name": "comments",
       "scope": [
@@ -100,6 +101,85 @@
       "settings": {
         "foreground": "#cccccc"
       }
+    },
+
+    // RegExp
+    {
+      "name": "Regular Expressions",
+      "scope": ["string.regexp"],
+      "settings": {
+        "foreground": "#56b6c2"
+      }
+    },
+    {
+      "name": "regexp constant character-class",
+      "scope": ["constant.other.character-class.regexp"],
+      "settings": {
+        "foreground": "#e06c75"
+      }
+    },
+    {
+      "name": "regexp operator.quantifier",
+      "scope": ["keyword.operator.quantifier.regexp"],
+      "settings": {
+        "foreground": "#d19a66"
+      }
+    },
+
+    // Markdown
+
+    // HTML
+
+    // CSS
+
+    // Python
+
+    // PHP
+
+    // JS/TS
+
+    // C++/C#
+    {
+      "name": "c++ function",
+      "scope": [
+        "meta.function.c",
+        "meta.function.cpp"
+      ],
+      "settings": {
+        "foreground": "#e06c75"
+      }
+    },
+    {
+      "name": "c++ block",
+      "scope": [
+        "punctuation.section.block.begin.bracket.curly.cpp",
+        "punctuation.section.block.end.bracket.curly.cpp",
+        "punctuation.terminator.statement.c",
+        "punctuation.section.block.begin.bracket.curly.c",
+        "punctuation.section.block.end.bracket.curly.c",
+        "punctuation.section.parens.begin.bracket.round.c",
+        "punctuation.section.parens.end.bracket.round.c",
+        "punctuation.section.parameters.begin.bracket.round.c",
+        "punctuation.section.parameters.end.bracket.round.c"
+      ],
+      "settings": {
+        "foreground": "#d4d4d4"
+      }
+    },
+    {
+      "name": "C++/C#",
+      "scope": [
+        "entity.name.label.cs",
+        "entity.name.scope-resolution.function.call",
+        "entity.name.scope-resolution.function.definition"
+      ],
+      "settings": {
+        "foreground": "#e5c07b"
+      }
     }
+
+    // Java
+    
+    // SQL
   ]
 }
