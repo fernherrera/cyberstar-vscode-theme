@@ -1,0 +1,26 @@
+{
+    "name": "cyberstar-vscode-theme",
+    "displayName": "CyberStar Theme",
+    "description": "A template for creating your own VS Code theme",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.51.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "CyberStar Retro Dark",
+                "uiTheme": "vs-dark",
+                "path": "./themes/cyberstar-retro-dark-color-theme.json"
+            },
+            {
+                "label": "CyberStar Dark Void",
+                "uiTheme": "vs-dark",
+                "path": "./themes/cyberstar-dark-void-color-theme.json"
+            }
+        ]
+    }
+}
