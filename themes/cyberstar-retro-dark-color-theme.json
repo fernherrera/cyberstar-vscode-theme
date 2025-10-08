@@ -12,8 +12,8 @@
 
     "textLink.foreground": "#fc9320",
 
-		"window.activeBorder": "#171717",
-		"window.inactiveBorder": "#000000",
+	"window.activeBorder": "#171717",
+	"window.inactiveBorder": "#000000",
 
     "titleBar.activeBackground": "#202126",
     "titleBar.activeForeground": "#ffffff99",
@@ -127,9 +127,9 @@
     "breadcrumb.focusForeground": "#ffffff",
     "breadcrumb.activeSelectionForeground": "#ffffff",
 
-    "editor.background": "#000000",
+    "editor.background": "#171717",
     "editor.foreground": "#CCCCCC",
-    "editor.foldBackground": "#264f784d",
+    "editor.foldBackground": "#20212666",
     "editor.selectionBackground": "#7d420099",
     "editor.inactiveSelectionBackground": "#55555599",
     "editor.selectionHighlightBackground": "#7d420099",
@@ -146,7 +146,7 @@
     "editor.wordHighlightStrongBackground": "#7d4200b8",
     "editor.wordHighlightBackground": "#55555599",
     "editor.lineHighlightBackground": "#ffffff0A",
-    "editor.lineHighlightBorder": "#282828",
+    "editor.lineHighlightBorder": "#202126",
     "editorCursor.background": "#000000",
     "editorCursor.foreground": "#cccccc",
     "editorLineNumber.foreground": "#555555",
@@ -194,9 +194,9 @@
     "editorSuggestWidget.selectedBackground": "#7d4200",
     "editorHoverWidget.foreground": "#cccccc",
     "editorHoverWidget.background": "#202126",
-    "editorHoverWidget.border": "#454545",
+    "editorHoverWidget.border": "#555555",
 
-    "minimap.background": "#171717",
+    "minimap.background": "#202126",
     "minimap.findMatchHighlight": "#515c6a66",
     "minimap.selectionHighlight": "#55555599",
     "minimap.errorHighlight": "#f48771",
@@ -359,7 +359,7 @@
 			],
 			"settings": {
 				"fontStyle": "bold",
-				"foreground": "#518845"
+				"foreground": "#a0927d"
 			}
 		},
 		{
@@ -380,7 +380,7 @@
 				"variable.language"
 			],
 			"settings": {
-				"foreground": "#BDD1B4"
+				"foreground": "#cdc39d"
 			}
 		},
 		{
@@ -402,7 +402,7 @@
 			],
 			"settings": {
 				// "fontStyle": "bold",
-				"foreground": "#9CFF64"
+				"foreground": "#d5c28a"
 			}
 		},
 		{
@@ -414,7 +414,7 @@
 			],
 			"settings": {
 				// "fontStyle": "bold",
-				"foreground": "#BDD1B4"
+				"foreground": "#e9dbbf"
 			}
 		},
 		{

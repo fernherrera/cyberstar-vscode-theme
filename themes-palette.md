@@ -20,12 +20,13 @@
 | Color     | Use                          |
 | ----------|------------------------------|
 | #cccccc | Foreground                   |
-| #BDD1B4 | Classes, Constants           |
+| #e9dbbf | Classes, Constants           |
 | #A0A0A0 | Variables, Properties        |
 | #888888 | Operators, Special Functions |
 | #555555 | Comments                     |
-| #9CFF64 | Functions, Methods           |
-| #518845 | Keywords                     |
+| #d5c28a | Functions, Methods           |
+| #a0927d | Keywords                     |
+| #cdc39d | Language Constants           |
 | #CBA357 | Numbers                      |
 | #EA8821 | Strings                      |
 
