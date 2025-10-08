@@ -28,7 +28,8 @@
 | #a0927d | Keywords                     |
 | #cdc39d | Language Constants           |
 | #CBA357 | Numbers                      |
-| #EA8821 | Strings                      |
+| #eb9d49 | Strings                      |
+| #fa4a4a | Invalid - Illegal            |
 
 -----
 
@@ -42,29 +43,3 @@
  #525863
  #FF06B5
  #FFEA16
-
-## Dark Space Black
-
- #A779F3
- #7BCCFC
- #87A1FF
- #B79DFF
- #BDC8F5
- #FF7D95
- #9ABDF5
- #4D5375
- #5A638C
- #03BDE5
- #FFDB69
- #9357E0
- #DE4BA3
-
-## Vesper
-
- #FFC799
- #A0A0A0
- #FFFFFF
- #FF8097
- #99FFE4
- #ABB2BF
- #5C6370
