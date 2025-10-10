@@ -1,3 +1,19 @@
+// Specify the namespaces this source code will be using
+// The namespaces below are all part of the standard .NET Framework Class Library
+using System;
+using System.Collections.Generic;
+using System.Dynamic;
+using System.Linq;
+using System.Net;
+using System.Threading.Tasks;
+using System.IO;
+
+// But this one is not:
+using System.Data.Entity;
+
+// C# 6, static using
+using static System.Math;
+
 // Single-line comments start with //
 
 /*
@@ -12,18 +28,6 @@ Multi-line comments look like this
 /// <returns>Information on the returned value of a function</returns>
 public void MethodOrClassOrOtherWithParsableHelp(string firstParam) { }
 
-// Specify the namespaces this source code will be using
-// The namespaces below are all part of the standard .NET Framework Class Library
-using System;
-using System.Collections.Generic;
-using System.Dynamic;
-using System.Linq;
-using System.Net;
-using System.Threading.Tasks;
-using System.IO;
-
-// But this one is not:
-using System.Data.Entity;
 // In order to be able to use it, you need to add a dll reference
 // This can be done with the NuGet package manager: `Install-Package EntityFramework`
 
@@ -1135,9 +1139,6 @@ on a new line! ""Wow!"", the masses cried";
     }
 } // End Namespace
 
-using System;
-// C# 6, static using
-using static System.Math;
 
 namespace Learning.More.CSharp
 {
@@ -1156,7 +1157,6 @@ namespace Learning.More.CSharp
 // New C# 7 Feature
 // Install Microsoft.Net.Compilers Latest from Nuget
 // Install System.ValueTuple Latest from Nuget
-using System;
 namespace Csharp7
 {
     // TUPLES, DECONSTRUCTION AND DISCARDS
