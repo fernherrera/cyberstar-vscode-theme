@@ -1,0 +1,93 @@
+# name: Boron
+# website: https://github.com/mjio/boron.tmtheme
+# comment: Last update: Feb 25 2013
+
+name: Boron
+type: dark
+
+colors: 
+    background: #151515
+    caret: #b0d0f0
+    foreground: #e8e8d3
+    invisibles: #e8e8d3
+    selection: #404040
+    lineHighlight: #010101
+    gutterForeground: #373737
+  
+tokenColors: 
+    name: Comment
+    scope: comment
+    settings: 
+        foreground: #888888
+
+    name: String
+    scope: string
+    settings: 
+        foreground: #99ad6a
+
+    name: String begin/end
+    scope: punctuation.definition.string.begin, punctuation.definition.string.end
+    settings: 
+        foreground: #556633
+
+    name: Symbol
+    scope: constant.other
+    settings: 
+        foreground: #7697d6
+
+    name: Regexp
+    scope: string.regexp
+    settings: 
+        foreground: #dd0093
+
+    name: Variable
+    scope: variable, support.class
+    settings: 
+        foreground: #ffb964
+
+    name: Number
+    scope: constant.numeric
+    settings: 
+        foreground: #cf6a4c
+
+    name: Entity
+    scope: entity
+    settings: 
+        foreground: #ffb964
+
+    name: Entity Function
+    scope: entity.name.function
+    settings: 
+        foreground: #fad07a
+
+    name: Keyword
+    scope: keyword.control
+    settings: 
+        foreground: #8fbfdc
+
+    name: Diff insertion
+    scope: diff.inserted, markup.inserted
+    settings: 
+        foreground: #558f1f
+
+    name: Diff deletion
+    scope: diff.deleted, markup.deleted
+    settings: 
+        foreground: #a1000d
+
+    name: Diff header
+    scope: meta.diff.header
+    settings: 
+        foreground: #FFFFFF
+        background: #4e738a
+
+    name: Diff range
+    scope: meta.diff.range
+    settings: 
+        fontStyle: italic
+        foreground: #888888
+
+    name: Diff changed
+    scope: markup.changed
+    settings: 
+        foreground: #967efb

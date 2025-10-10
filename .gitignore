@@ -1,5 +1,8 @@
+.env*
 .vscode/
+.vscodeignore
 node_modules/
+*.pyc
 *.vsix
 
 .DS_Store

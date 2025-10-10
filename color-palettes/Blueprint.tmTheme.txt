@@ -1,0 +1,68 @@
+
+name: Blueprint
+type: dark
+
+colors: 
+    background: #1D283C
+    caret: #C1D9FF
+    foreground: #E0ECFF
+    invisibles: #A4C7FF
+    lineHighlight: #535D6C
+    selection: #535D6C
+
+tokenColors: 
+    name: Comment
+    scope: comment
+    settings: 
+        fontStyle: 
+        foreground: #9097A3
+
+    name: Keyword
+    scope: keyword, storage
+    settings: 
+        fontStyle: 
+        foreground: #9EAAC1
+
+    name: Number
+    scope: constant.numeric
+    settings: 
+        fontStyle: 
+        foreground: #F9FBFF
+
+    name: Constant
+    scope: constant
+    settings: 
+        fontStyle: 
+        foreground: #F9FBFF
+
+    name: String
+    scope: string
+    settings: 
+        fontStyle: 
+        foreground: #F9FBFF
+
+    name: Invalid
+    scope: invalid
+    settings: 
+        background: #990000
+        foreground: #FFFFFF
+
+    name: Diff Header
+    scope: meta.diff.header, meta.separator.diff, meta.diff.index, meta.diff.range
+    settings: 
+        background: #2F33AB
+
+    name: diff.deleted
+    scope: markup.deleted
+    settings: 
+        foreground: #F92672
+
+    name: diff.inserted
+    scope: markup.inserted
+    settings: 
+        foreground: #A6E22E
+
+    name: diff.changed
+    scope: markup.changed
+    settings: 
+        foreground: #967EFB

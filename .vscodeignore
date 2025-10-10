@@ -1,3 +1,9 @@
 .github/
 .vscode/**
+.vscode-test/**
+.env*
 .gitignore
+color-palettes/**
+samples/**
+src/**
+vsc-extension-quickstart.md

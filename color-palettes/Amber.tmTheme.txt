@@ -1,0 +1,68 @@
+
+name: Amber
+type: dark
+
+colors: 
+    background: #1D1B16
+    caret: #D3CFC1
+    foreground: #FEC328
+    invisibles: #745A15
+    lineHighlight: #372C12
+    selection: #372C12
+
+tokenColors: 
+    name: Comment
+    scope: comment
+    settings: 
+        fontStyle: 
+        foreground: #947114
+
+    name: Keyword
+    scope: keyword, storage
+    settings: 
+        fontStyle: 
+        foreground: #C38B16
+
+    name: Number
+    scope: constant.numeric
+    settings: 
+        fontStyle: 
+        foreground: #FDCC5B
+
+    name: Constant
+    scope: constant
+    settings: 
+        fontStyle: 
+        foreground: #FDCC5B
+
+    name: String
+    scope: string
+    settings: 
+        fontStyle: 
+        foreground: #FDCC5B
+
+    name: Invalid
+    scope: invalid
+    settings: 
+        background: #990000
+        foreground: #FFFFFF
+
+    name: Diff Header
+    scope: meta.diff.header, meta.separator.diff, meta.diff.index, meta.diff.range
+    settings: 
+        background: #2F33AB
+
+    name: diff.deleted
+    scope: markup.deleted
+    settings: 
+        foreground: #F92672
+
+    name: diff.inserted
+    scope: markup.inserted
+    settings: 
+        foreground: #A6E22E
+
+    name: diff.changed
+    scope: markup.changed
+    settings: 
+        foreground: #967EFB
