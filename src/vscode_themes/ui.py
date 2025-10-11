@@ -1,8 +1,5 @@
 from dataclasses import dataclass
-from typing import Optional
-
-from .base_theme import Theme
-
+from typing import Any, Optional
 
 @dataclass
 class UI:
@@ -12,13 +9,13 @@ class UI:
     @returns: A partial VSCodeThemeColors object representing the UI configuration.
     """
 
-    theme: Theme = Theme()
+    theme: Any
 
-    def __init__(self, theme: Theme):
+    def __init__(self, theme):
         """_summary_
 
         Args:
-            theme (Theme): _description_
+            theme (ThemeConfig): _description_
         """
         self.theme = theme
 

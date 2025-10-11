@@ -1,34 +1,28 @@
 import argparse
 from pathlib import Path
 
-import themes
+from vscode_themes.theme import ThemeBuilder
 
 def main(args: argparse.Namespace):
     try:
-        builder = getattr(themes, args.theme)()
+        builder = ThemeBuilder()
+        builder.build(args.config, args.output)
     except Exception as e:
-        print(f"Unable to select {args.theme}: {e}")
-        print("Falling back to default theme...")
-        builder = themes.Theme()
-
-    builder.build_theme(args.template, args.output)
+        print(f"Error: {e}")
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument(
         "-t",
-        "--template",
-        default=Path("template.json"),
-        help="Template file to be used (template.json)",
+        "--config",
+        default=Path("config.json"),
+        help="Configuration file to be used (config.json)",
         type=Path,
-    )
-    parser.add_argument(
-        "-T", "--theme", default="Theme", help="The theme to generate (Theme)", type=str
     )
     parser.add_argument(
         "-o",
         "--output",
-        default=Path("output.json"),
+        default=Path("../themes/"),
         help="The file to output the generated theme to (output.json)",
         type=Path,
     )
