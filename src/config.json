@@ -2,11 +2,12 @@
     {
         "name": "CyberStar Pro Dark",
         "slug": "cyberstar-pro-dark",
+        "type": "dark",
         "uiTheme": "vs-dark",
         "ui": {
-            "accent": "#7d4200",
-            "accent_lighter": "#AA5800",
-            "accent_tertiary": "#EC7900",
+            "accent": "#AA5800",
+            "accent_lighter": "#EC7900",
+            "accent_darker": "#7d4200",
             "border": "#000000",
             "border_lighter": "#000000",
             "border_darker": "#000000",

@@ -10,9 +10,9 @@ class UI:
     """
 
     theme: Any
-    accent: str = "#7D4200"
-    accent_lighter: str = "#AA5800"
-    accent_tertiary: str = "#EC7900"
+    accent: str = "#AA5800"
+    accent_lighter: str = "#EC7900"
+    accent_darker: str = "#7D4200"
     border: str = "#000000"
     border_lighter: str = "#000000"
     border_darker: str = "#000000"
@@ -30,6 +30,10 @@ class UI:
             theme (ThemeConfig): _description_
         """
         self.theme = theme
+
+        for key, value in theme.ui.items():
+            setattr(self, key, value)
+
 
     def build(self):
         return {
@@ -106,7 +110,7 @@ class UI:
         return {
             "actionBar.toggledBackground": self.background_darker,
             "activityBar.activeBackground": self.accent,
-            "activityBar.activeBorder": self.accent_tertiary,
+            "activityBar.activeBorder": self.accent,
             "activityBar.activeFocusBorder": self.border,
             "activityBar.background": self.background,
             "activityBar.border": self.border,
@@ -690,7 +694,7 @@ class UI:
             "list.focusBackground": self.accent,
             "list.focusForeground": self.foreground,
             "list.focusHighlightForeground": self.foreground_lighter,
-            "list.focusOutline": self.accent_tertiary,
+            "list.focusOutline": self.accent,
             "list.highlightForeground": self.foreground_lighter,
             "list.hoverBackground": self.background_lighter,
             "list.hoverForeground": self.foreground,
@@ -889,7 +893,7 @@ class UI:
 
     def progressBarColors(self):
         return {
-            "progressBar.background": self.accent_tertiary,
+            "progressBar.background": self.accent,
         }
 
     def pullRequestsColors(self):
