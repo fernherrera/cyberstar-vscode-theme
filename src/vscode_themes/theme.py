@@ -36,6 +36,11 @@ class Theme:
     # Meta
     name: str = "Theme"
     slug: str = "themes"
+    uiTheme: str = "vs-dark"
+
+    ui: Any = None
+    levels: Any = None
+    syntax: Any = None
 
     # Base Colors
     foreground: str = "#F3F3F7"

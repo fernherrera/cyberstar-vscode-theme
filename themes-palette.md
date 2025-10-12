@@ -13,23 +13,23 @@
 | #000000 | Editor Background, Borders          |
 | #EC7900 | Highlights                          |
 | #AA5800 | Highlights                          |
-| #7d4200 | Selection backgroud                 |
+| #7D4200 | Selection backgroud                 |
 
 ### Syntax
 
 | Color     | Use                          |
 | ----------|------------------------------|
-| #cccccc | Foreground                   |
-| #e9dbbf | Classes, Constants           |
+| #CCCCCC | Foreground                   |
+| #E9DBBF | Classes, Constants           |
 | #A0A0A0 | Variables, Properties        |
 | #888888 | Operators, Special Functions |
 | #555555 | Comments                     |
-| #d5c28a | Functions, Methods           |
-| #a0927d | Keywords                     |
-| #cdc39d | Language Constants           |
+| #D5C28A | Functions, Methods           |
+| #A0927D | Keywords                     |
+| #CDC39D | Language Constants           |
 | #CBA357 | Numbers                      |
-| #eb9d49 | Strings                      |
-| #fa4a4a | Invalid - Illegal            |
+| #EB9D49 | Strings                      |
+| #FA4A4A | Invalid - Illegal            |
 
 -----
 
