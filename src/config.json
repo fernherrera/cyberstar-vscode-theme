@@ -18,8 +18,27 @@
             "background_lighter": "#3C3C3C",
             "background_darker": "#171717"
         },
-        "levels": {},
-        "syntax": {}
+        "levels": {
+            "danger": "#E35535",
+            "info": "#69C3FF",
+            "success": "#3CEC85",
+            "warning": "#FF955C"
+        },
+        "syntax": {
+            "accessors": "#A0927D",
+            "classes": "#E9DBBF",
+            "comments": "#555555",
+            "keywords": "#A0927D",
+            "constants": "#cdc39d",
+            "decorators": "#A0A0A0",
+            "functions": "#D5C28A",
+            "operators": "#888888",
+            "punctuation": "#CCCCCC",
+            "strings": "#EB9D49",
+            "numbers": "#CBA357",
+            "types": "#CDC39D",
+            "variables": "#A0A0A0"
+        }
     }
 ]
 

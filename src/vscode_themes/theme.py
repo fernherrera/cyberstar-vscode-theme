@@ -3,6 +3,7 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
 from .ui import UI
+from .syntax import Syntax
 
 @dataclass
 class Theme:
@@ -79,7 +80,8 @@ class ThemeBuilder:
         theme_template = {
             "$schema": "vscode://schemas/color-theme",
             "name": theme.name,
-            "colors": UI(theme).build()
+            "colors": UI(theme).build(),
+            "tokenColors": Syntax(theme).build()
         }
 
         file_name = theme.slug + '-color-theme.json'

@@ -34,7 +34,6 @@ class UI:
         for key, value in theme.ui.items():
             setattr(self, key, value)
 
-
     def build(self):
         return {
             **self.activityBarColors(),
