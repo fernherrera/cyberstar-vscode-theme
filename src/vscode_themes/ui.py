@@ -10,18 +10,27 @@ class UI:
     """
 
     theme: Any
+    
+    # UI
     accent: str = "#AA5800"
     accent_lighter: str = "#EC7900"
     accent_darker: str = "#7D4200"
+    background: str = "#202126"
+    background_lighter: str = "#3c3c3c"
+    background_darker: str = "#171717"
     border: str = "#444444"
     border_lighter: str = "#808080"
     border_darker: str = "#000000"
     foreground: str = "#CCCCCC"
     foreground_lighter: str = "#FFFFFF"
     foreground_darker: str = "#555555"
-    background: str = "#202126"
-    background_lighter: str = "#3c3c3c"
-    background_darker: str = "#171717"
+
+    # Levels
+    error: str = "#E35535"
+    info: str = "#69C3FF"
+    success: str = "#3CEC85"
+    warning: str = "#FF955C"
+    
 
     def __init__(self, theme):
         """_summary_
@@ -32,6 +41,9 @@ class UI:
         self.theme = theme
 
         for key, value in theme.ui.items():
+            setattr(self, key, value)
+
+        for key, value in theme.levels.items():
             setattr(self, key, value)
 
     def build(self):

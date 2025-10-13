@@ -12,14 +12,9 @@
     "contributes": {
         "themes": [
             {
-                "label": "CyberStar Retro Dark",
-                "uiTheme": "vs-dark",
-                "path": "./themes/cyberstar-retro-dark-color-theme.json"
-            },
-            {
-                "label": "CyberStar Dark Void",
-                "uiTheme": "vs-dark",
-                "path": "./themes/cyberstar-dark-void-color-theme.json"
+                "label": "CyberStar Retro Future",
+                "uiTheme": "vs",
+                "path": "./themes/cyberstar-retro-future-color-theme.json"
             },
             {
                 "label": "CyberStar Pro Dark",

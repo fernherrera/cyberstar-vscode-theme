@@ -3,10 +3,12 @@ from typing import Any
 
 @dataclass
 class Syntax:
-    """
+    """Syntax Highlighting configuration
     """
 
     theme: Any
+    
+    # Syntax
     accessors: str = "#000000"
     classes: str = "#000000"
     comments: str = "#000000"
@@ -20,6 +22,13 @@ class Syntax:
     numbers: str = "#000000"
     types: str = "#000000"
     variables: str = "#000000"
+    
+    # Levels
+    error: str = "#E35535"
+    info: str = "#69C3FF"
+    success: str = "#3CEC85"
+    warning: str = "#FF955C"
+
 
     def __init__(self, theme):
         """_summary_
@@ -31,8 +40,18 @@ class Syntax:
 
         for key, value in theme.syntax.items():
             setattr(self, key, value)
+            
+        for key, value in theme.levels.items():
+            setattr(self, key, value)
     
     def __s(self, name, scopes, color, style=""):
+        """TokenColor - Textmate token color.
+        
+        @param name: Token name.
+        @param scope: Array of scopes.
+        @param color: Color value in hexadecimal notation with an alpha channel for transparency. (supported: #RGB, #RGBA, #RRGGBB and #RRGGBBAA.)
+        @param style: Style is a space-separated list of any of `italic`, `bold`, `underline`.
+        """
         return {
             "name": name,
             "scope": scopes,
@@ -44,6 +63,7 @@ class Syntax:
 
     def build(self):
         return [
+            # General
             self.__s("Accessors", accessors, self.accessors),
             self.__s("Classes", classes, self.classes),
             self.__s("Comments", comments, self.comments),
@@ -57,10 +77,47 @@ class Syntax:
             self.__s("Types", types, self.types),
             self.__s("Variables", variables, self.variables),
 
-            self.__s("Markup Attributes", markup_attributes, self.functions),
-            self.__s("Markup Punctuation", markup_tagsPunctuation, self.operators),
-            self.__s("Markup Tags", markup_tags, self.keywords),
-            self.__s("Markup Variables", markup_variables, self.variables)
+            # HTML
+            self.__s("HTML: Attributes", markup_attributes, self.functions),
+            self.__s("HTML: Punctuation", markup_tagsPunctuation, self.operators),
+            self.__s("HTML: Tags", markup_tags, self.keywords),
+            self.__s("HTML: Variables", markup_variables, self.variables),
+            
+            # Markdown
+            self.__s("Markdown: Bold", markup_mdBold, self.operators, "bold"),
+            self.__s("Markdown: Code", markup_mdCode, self.keywords),
+            self.__s("Markdown: Code Language", markup_mdCodeLanguage, self.functions),
+            self.__s("Markdown: Heading", markup_mdHeading, self.decorators),
+            self.__s("Markdown: Heading Punctuation", markup_mdHeadingPunctuation, self.punctuation),
+            self.__s("Markdown: Italic", markup_mdItalic, self.operators, "italic"),
+            self.__s("Markdown: Link", markup_mdLink, self.operators),
+            self.__s("Markdown: List", markup_mdList, self.operators),
+            self.__s("Markdown: List Punctuation", markup_mdListPunctuation, self.punctuation),
+            self.__s("Markdown: Quote", markup_mdQuote, self.operators),
+            self.__s("Markdown: Quote Punctuation", markup_mdQuotePunctuation, self.punctuation),
+            self.__s("Markdown: Striked", markup_mdStriked, self.operators),
+            
+            # Markup
+            self.__s("Markup: Component", markup_mdCode, self.punctuation),
+            self.__s("Markup: Front Matter", markup_mdCode, self.punctuation),
+            
+            # DIFF/PATCH
+            self.__s("Markup: Diff Add", markup_diffAdd, self.punctuation),
+            self.__s("Markup: Diff Del", markup_diffDel, self.punctuation),
+            self.__s("Markup: Diff Head", markup_diffHead, self.punctuation),
+            self.__s("Markup: Diff Range", markup_diffRange, self.punctuation),
+            
+            # CSS
+            self.__s("CSS: Classes", styling_classes, self.classes),
+            self.__s("CSS: Ids", styling_ids, self.accessors),
+            self.__s("CSS: Numbers", styling_nums, self.numbers),
+            self.__s("CSS: Properties", styling_property, self.decorators),
+            self.__s("CSS: Pseudo Classes", styling_pseudoClasses, self.operators),
+            self.__s("CSS: Pseudo Elements", styling_pseudoElements, self.operators),
+            self.__s("CSS: Reference", styling_reference, self.operators),
+            self.__s("CSS: Tags", styling_tag, self.constants),
+            self.__s("CSS: Units", styling_units, self.decorators),
+            self.__s("CSS: Values", styling_value, self.strings)
         ]
 
 
@@ -94,6 +151,7 @@ comments = [
     "string.quoted.docstring.multi",
     "comment.block.documentation source",
 ]
+constants = ["constant", "support.constant.core.php"]
 keywords = [
     "keyword.package.go",
     "keyword.operator.pointer.go",
@@ -156,7 +214,6 @@ keywords = [
     "keyword.codetag.notation",
     "keyword.operator.pipe.shell",
 ]
-constants = ["constant", "support.constant.core.php"]
 currentText = [
     "meta.section.struct.go variable.other.field.go",
     "meta.section.struct.go variable.other.declaration.go",
@@ -312,7 +369,7 @@ punctuation = [
     "JSXAttrs keyword.operator.assignment.jsx",
     "meta.tag.attributes.js keyword.operator.assignment.js",
 ]
-self = [
+this = [
     "entity.name.package.go",
     "variable.language.this",
     "variable.language.special.self",
@@ -556,6 +613,7 @@ markup_diffRange = [
     "source.diff meta.diff.range.unified",
 ]
 
+# Styling
 styling_units = ["keyword.other.unit"]
 styling_pseudoClasses = ["entity.other.attribute-name.pseudo-class"]
 styling_pseudoElements = ["entity.other.attribute-name.pseudo-element"]
