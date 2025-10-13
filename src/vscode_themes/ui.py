@@ -13,16 +13,19 @@ class UI:
     
     # UI
     accent: str = "#AA5800"
-    accent_lighter: str = "#EC7900"
-    accent_darker: str = "#7D4200"
+    accent_highlight: str = "#EC7900"
+    accent_shadow: str = "#7D4200"
+        
     background: str = "#202126"
-    background_lighter: str = "#3c3c3c"
-    background_darker: str = "#171717"
     border: str = "#444444"
-    border_lighter: str = "#808080"
-    border_darker: str = "#000000"
     foreground: str = "#CCCCCC"
+
+    background_lighter: str = "#3c3c3c"
+    border_lighter: str = "#808080"
     foreground_lighter: str = "#FFFFFF"
+    
+    background_darker: str = "#171717"
+    border_darker: str = "#000000"
     foreground_darker: str = "#555555"
 
     # Levels
@@ -120,15 +123,15 @@ class UI:
     def activityBarColors(self):
         return {
             "actionBar.toggledBackground": self.background_darker,
-            "activityBar.activeBackground": self.accent_darker,
-            "activityBar.activeBorder": self.accent_lighter,
+            "activityBar.activeBackground": self.accent_shadow,
+            "activityBar.activeBorder": self.accent_highlight,
             "activityBar.activeFocusBorder": self.border,
             "activityBar.background": self.background,
             "activityBar.border": self.border_darker,
             "activityBar.dropBorder": self.border,
             "activityBar.foreground": self.foreground,
             "activityBar.inactiveForeground": self.foreground_darker,
-            "activityBarBadge.background": self.accent_darker,
+            "activityBarBadge.background": self.accent_shadow,
             "activityBarBadge.foreground": self.foreground_lighter,
             "activityBarTop.activeBackground": self.background,
             "activityBarTop.activeBorder": self.border,
@@ -144,7 +147,7 @@ class UI:
 
     def badgeColors(self):
         return {
-            "badge.background": self.accent_darker,
+            "badge.background": self.accent_shadow,
             "badge.foreground": self.foreground_lighter,
         }
 
@@ -166,10 +169,10 @@ class UI:
 
     def buttonColors(self):
         return {
-            "button.background": self.accent_darker,
-            "button.border": self.accent,
-            "button.foreground": self.foreground_lighter,
-            "button.hoverBackground": self.accent_lighter,
+            "button.background": self.accent,
+            "button.border": self.accent_shadow,
+            "button.foreground": self.accent_highlight,
+            "button.hoverBackground": self.accent,
             "button.secondaryBackground": "#3a3d41",
             "button.secondaryForeground": self.foreground_lighter,
             "button.secondaryHoverBackground": "#45494e",
@@ -208,7 +211,7 @@ class UI:
             "checkbox.border": self.border_darker + "00",
             "checkbox.foreground": self.foreground,
             "checkbox.selectBackground": self.background_lighter,
-            "checkbox.selectBorder": self.foreground_darker,
+            "checkbox.selectBorder": self.border_darker,
         }
 
     def commandCenterColors(self):
@@ -283,15 +286,15 @@ class UI:
 
     def diffEditorColors(self):
         return {
-            "diffEditor.border": "#444444",
+            # "diffEditor.border": self.border,
             # "diffEditor.diagonalFill": "#000000",
             # "diffEditor.insertedLineBackground": "#000000",
-            "diffEditor.insertedTextBackground": "#9bb95533",
+            # "diffEditor.insertedTextBackground": "#9bb95533",
             # "diffEditor.insertedTextBorder": "#000000",
             # "diffEditor.move.border": "#000000",
             # "diffEditor.moveActive.border": "#000000",
             # "diffEditor.removedLineBackground": "#000000",
-            "diffEditor.removedTextBackground": "#ff000033",
+            # "diffEditor.removedTextBackground": "#ff000033",
             # "diffEditor.removedTextBorder": "#000000",
             # "diffEditor.unchangedCodeBackground": "#000000",
             # "diffEditor.unchangedRegionBackground": "#000000",
@@ -324,10 +327,10 @@ class UI:
             "editor.findMatchBorder": "#74879f",
             # "editor.findMatchForeground": "#000000",
             "editor.findMatchHighlightBackground": "#ea5c0055",
-            "editor.findMatchHighlightBorder": "#FFFFFF00",
+            "editor.findMatchHighlightBorder": self.border + "00",
             # "editor.findMatchHighlightForeground": "#000000",
             "editor.findRangeHighlightBackground": "#3a3d4166",
-            "editor.findRangeHighlightBorder": "#FFFFFF00",
+            "editor.findRangeHighlightBorder": self.border + "00",
             # "editor.focusedStackFrameHighlightBackground": "#000000",
             "editor.foldBackground": self.background + "66",
             # "editor.foldPlaceholderForeground": "#000000",
@@ -337,15 +340,15 @@ class UI:
             # "editor.inlineValuesBackground": "#000000",
             # "editor.inlineValuesForeground": "#000000",
             "editor.lineHighlightBackground": "#FFFFFF0A",
-            "editor.lineHighlightBorder": self.background,
+            "editor.lineHighlightBorder": self.border,
             # "editor.linkedEditingBackground": "#000000",
             # "editor.placeholder.foreground": "#000000",
             # "editor.rangeHighlightBackground": "#000000",
             # "editor.rangeHighlightBorder": "#000000",
             "editor.selectionBackground": self.accent + "99",
-            "editor.selectionForeground": self.foreground_lighter,
+            "editor.selectionForeground": self.accent_highlight,
             "editor.selectionHighlightBackground": self.accent + "99",
-            "editor.selectionHighlightBorder": "#495F77",
+            "editor.selectionHighlightBorder": self.accent_shadow + "99",
             # "editor.snippetFinalTabstopHighlightBackground": "#000000",
             # "editor.snippetFinalTabstopHighlightBorder": "#000000",
             # "editor.snippetTabstopHighlightBackground": "#000000",
@@ -370,8 +373,8 @@ class UI:
             # "editorBracketHighlight.foreground5": "#000000",
             # "editorBracketHighlight.foreground6": "#000000",
             # "editorBracketHighlight.unexpectedBracket.foreground": "#000000",
-            "editorBracketMatch.background": "#0064001a",
-            "editorBracketMatch.border": "#888888",
+            "editorBracketMatch.background": self.background_lighter,
+            "editorBracketMatch.border": self.border_lighter,
             # "editorBracketPairGuide.activeBackground1": "#000000",
             # "editorBracketPairGuide.activeBackground2": "#000000",
             # "editorBracketPairGuide.activeBackground3": "#000000",
@@ -410,7 +413,7 @@ class UI:
             "editorGroupHeader.tabsBackground": self.background_darker,
             # "editorGroupHeader.tabsBorder": "#000000",
             "editorGutter.addedBackground": "#587c0c",
-            "editorGutter.background": "#20212699",
+            "editorGutter.background": self.background + "99",
             # "editorGutter.commentGlyphForeground": "#000000",
             "editorGutter.commentRangeForeground": "#c5c5c5",
             # "editorGutter.commentUnresolvedGlyphForeground": "#000000",
@@ -438,8 +441,8 @@ class UI:
             # "editorIndentGuide.background4": "#000000",
             # "editorIndentGuide.background5": "#000000",
             # "editorIndentGuide.background6": "#000000",
-            "editorInfo.background": "#4490BF00",
-            "editorInfo.border": "#4490BF00",
+            "editorInfo.background": self.background + "00",
+            "editorInfo.border": self.border + "00",
             "editorInfo.foreground": "#75beff",
             # "editorInlayHint.background": "#000000",
             # "editorInlayHint.foreground": "#000000",
@@ -495,10 +498,10 @@ class UI:
             # "editorStickyScroll.shadow": "#000000",
             # "editorStickyScrollHover.background": "#000000",
             "editorSuggestWidget.background": self.background,
-            "editorSuggestWidget.border": "#454545",
-            "editorSuggestWidget.focusHighlightForeground": self.accent_lighter,
+            "editorSuggestWidget.border": self.border,
+            "editorSuggestWidget.focusHighlightForeground": self.accent_highlight,
             "editorSuggestWidget.foreground": self.foreground,
-            "editorSuggestWidget.highlightForeground": self.accent_lighter,
+            "editorSuggestWidget.highlightForeground": self.accent_highlight,
             "editorSuggestWidget.selectedBackground": self.accent,
             "editorSuggestWidget.selectedForeground": self.foreground,
             "editorSuggestWidget.selectedIconForeground": self.foreground,
@@ -508,14 +511,14 @@ class UI:
             # "editorUnnecessaryCode.border": "#000000",
             # "editorUnnecessaryCode.opacity": "#000000",
             "editorWarning.background": "#A9904000",
-            "editorWarning.border": "#FFFFFF00",
+            "editorWarning.border": self.border + "00",
             "editorWarning.foreground": "#cca700",
             "editorWatermark.foreground": "#000000",
             "editorWhitespace.foreground": self.foreground_darker,
             "editorWidget.background": self.background,
             "editorWidget.border": self.border,
             "editorWidget.foreground": self.foreground,
-            "editorWidget.resizeBorder": "#5F5F5F",
+            "editorWidget.resizeBorder": self.border,
         }
 
     def errorColors(self):
@@ -584,7 +587,7 @@ class UI:
 
     def generalColors(self):
         return {
-            "focusBorder": self.background_darker,
+            "focusBorder": self.border_lighter,
             "foreground": self.foreground,
             "icon.foreground": self.foreground,
         }
@@ -648,8 +651,8 @@ class UI:
 
     def inputOptionColors(self):
         return {
-            "inputOption.activeBackground": "#fc9320b9",
-            "inputOption.activeBorder": "#007acc00",
+            "inputOption.activeBackground": self.background_lighter + "b9",
+            "inputOption.activeBorder": self.border_lighter + "00",
             "inputOption.activeForeground": self.foreground_lighter,
             # "inputOption.hoverBackground": "#000000",
         }
@@ -692,7 +695,7 @@ class UI:
 
     def listColors(self):
         return {
-            "list.activeSelectionBackground": self.accent_darker,
+            "list.activeSelectionBackground": self.accent_shadow,
             "list.activeSelectionForeground": self.foreground_lighter,
             "list.activeSelectionIconForeground": self.foreground_lighter,
             # "list.deemphasizedForeground": "#000000",
@@ -701,8 +704,8 @@ class UI:
             "list.errorForeground": self.foreground,
             # "list.filterMatchBackground": "#000000",
             # "list.filterMatchBorder": "#000000",
-            "list.focusAndSelectionOutline": self.accent_lighter,
-            "list.focusBackground": self.accent_darker,
+            "list.focusAndSelectionOutline": self.accent_highlight,
+            "list.focusBackground": self.accent_shadow,
             "list.focusForeground": self.foreground,
             "list.focusHighlightForeground": self.foreground_lighter,
             "list.focusOutline": self.accent + "66",
@@ -716,7 +719,7 @@ class UI:
             "list.inactiveSelectionIconForeground": self.foreground,
             # "list.invalidItemForeground": "#000000",
             # "list.warningForeground": "#000000",
-            "listFilterWidget.background": self.accent_darker,
+            "listFilterWidget.background": self.accent_shadow,
             "listFilterWidget.noMatchesOutline": "#be1100",
             "listFilterWidget.outline": self.border_darker + "00",
             "listFilterWidget.shadow": self.border,
@@ -727,12 +730,12 @@ class UI:
             "menu.background": self.background,
             "menu.border": self.border,
             "menu.foreground": self.foreground,
-            "menu.selectionBackground": self.accent_darker,
-            "menu.selectionBorder": self.accent,
+            "menu.selectionBackground": self.accent_shadow,
+            "menu.selectionBorder": self.accent_shadow,
             "menu.selectionForeground": self.foreground_lighter,
             "menu.separatorBackground": self.foreground_darker,
-            "menubar.selectionBackground": self.accent_darker,
-            "menubar.selectionBorder": self.accent,
+            "menubar.selectionBackground": self.accent_shadow,
+            "menubar.selectionBorder": self.accent_shadow,
             "menubar.selectionForeground": self.foreground_lighter,
         }
 
@@ -823,9 +826,9 @@ class UI:
             "notifications.background": self.background,
             "notifications.border": self.border,
             "notifications.foreground": self.foreground,
-            "notificationsErrorIcon.foreground": "#f48771",
-            "notificationsInfoIcon.foreground": "#75beff",
-            "notificationsWarningIcon.foreground": "#cca700",
+            "notificationsErrorIcon.foreground": self.error,
+            "notificationsInfoIcon.foreground": self.info,
+            "notificationsWarningIcon.foreground": self.warning,
             "notificationToast.border": self.border,
         }
 
@@ -838,11 +841,11 @@ class UI:
     def panelColors(self):
         return {
             "panel.background": "#000000",
-            "panel.border": "#55555599",
+            "panel.border": self.border + "99",
             # "panel.dropBackground": "#000000",
             # "panel.dropBorder": "#000000",
             # "panelInput.border": "#000000",
-            "panelSection.border": "#80808059",
+            "panelSection.border": self.border_lighter + "59",
             # "panelSection.dropBackground": "#000000",
             # "panelSectionHeader.background": "#000000",
             # "panelSectionHeader.border": "#000000",
@@ -850,7 +853,7 @@ class UI:
             # "panelStickyScroll.background": "#000000",
             # "panelStickyScroll.border": "#000000",
             # "panelStickyScroll.shadow": "#000000",
-            "panelTitle.activeBorder": self.accent_lighter,
+            "panelTitle.activeBorder": self.accent_highlight,
             "panelTitle.activeForeground": self.foreground_lighter,
             # "panelTitle.border": "#000000",
             "panelTitle.inactiveForeground": self.foreground_darker,
@@ -879,8 +882,8 @@ class UI:
 
     def pickerGroupColors(self):
         return {
-            "pickerGroup.border": self.background_lighter,
-            "pickerGroup.foreground": self.accent_lighter,
+            "pickerGroup.border": self.border_lighter,
+            "pickerGroup.foreground": self.foreground_lighter,
         }
 
     def portsColors(self):
@@ -904,7 +907,7 @@ class UI:
 
     def progressBarColors(self):
         return {
-            "progressBar.background": self.accent_lighter,
+            "progressBar.background": self.accent_highlight,
         }
 
     def pullRequestsColors(self):
@@ -976,7 +979,7 @@ class UI:
 
     def selectionColors(self):
         return {
-            "selection.background": self.accent_darker,
+            "selection.background": self.accent_shadow,
         }
 
     def settingsColors(self):
@@ -988,7 +991,7 @@ class UI:
             # "settings.dropdownBorder": "#000000",
             # "settings.dropdownForeground": "#000000",
             # "settings.dropdownListBorder": "#000000",
-            "settings.focusedRowBackground": self.foreground_lighter + "07",
+            "settings.focusedRowBackground": self.background_lighter + "07",
             # "settings.focusedRowBorder": "#000000",
             # "settings.headerBorder": "#000000",
             "settings.headerForeground": self.foreground,
@@ -1028,14 +1031,14 @@ class UI:
     def statusBarColors(self):
         return {
             "statusBar.background": self.background,
-            "statusBar.border": self.border_darker,
-            "statusBar.debuggingBackground": self.accent_darker,
-            "statusBar.debuggingBorder": self.border_darker,
+            "statusBar.border": self.border,
+            "statusBar.debuggingBackground": self.accent_shadow,
+            "statusBar.debuggingBorder": self.border,
             "statusBar.debuggingForeground": self.foreground_lighter,
             "statusBar.focusBorder": self.foreground_darker,
-            "statusBar.foreground": self.foreground,
+            "statusBar.foreground": self.foreground_lighter + "99",
             "statusBar.noFolderBackground": self.background,
-            "statusBar.noFolderBorder": self.border_darker,
+            "statusBar.noFolderBorder": self.border,
             "statusBar.noFolderForeground": self.foreground_lighter,
             "statusBarItem.activeBackground": self.foreground_lighter + "25",
             # "statusBarItem.compactHoverBackground": "#000000",
@@ -1054,9 +1057,9 @@ class UI:
             # "statusBarItem.prominentForeground": "#000000",
             # "statusBarItem.prominentHoverBackground": "#000000",
             # "statusBarItem.prominentHoverForeground": "#000000",
-            "statusBarItem.remoteBackground": self.accent_darker,
+            "statusBarItem.remoteBackground": self.accent_shadow,
             "statusBarItem.remoteForeground": self.foreground_lighter,
-            "statusBarItem.remoteHoverBackground": self.accent_lighter,
+            "statusBarItem.remoteHoverBackground": self.accent_highlight,
             "statusBarItem.remoteHoverForeground": self.foreground_lighter,
             # "statusBarItem.warningBackground": "#000000",
             # "statusBarItem.warningForeground": "#000000",
@@ -1105,13 +1108,13 @@ class UI:
         return {
             "tab.activeBackground": self.background,
             "tab.activeBorder": self.border_darker + "00",
-            "tab.activeBorderTop": self.accent_lighter,
+            "tab.activeBorderTop": self.accent,
             "tab.activeForeground": self.foreground_lighter,
             # "tab.activeModifiedBorder": "#000000",
-            "tab.border": self.background,
+            "tab.border": self.border,
             # "tab.dragAndDropBorder": "#000000",
             "tab.hoverBackground": self.background,
-            "tab.hoverBorder": self.background,
+            "tab.hoverBorder": self.border,
             "tab.hoverForeground": self.foreground_lighter,
             "tab.inactiveBackground": self.background_darker,
             "tab.inactiveForeground": self.foreground_lighter + "80",
@@ -1151,7 +1154,7 @@ class UI:
             "terminal.ansiWhite": "#e5e5e5",
             "terminal.ansiYellow": "#e5e510",
             "terminal.background": "#000000",
-            "terminal.border": "#80808059",
+            "terminal.border": self.border_lighter + "59",
             # "terminal.dropBackground": "#000000",
             # "terminal.findMatchBackground": "#000000",
             # "terminal.findMatchBorder": "#000000",
@@ -1168,7 +1171,7 @@ class UI:
             # "terminalCommandDecoration.errorBackground": "#000000",
             # "terminalCommandDecoration.successBackground": "#000000",
             # "terminalCommandGuide.foreground": "#000000",
-            "terminalCursor.background": "#fc9320",
+            "terminalCursor.background": self.accent,
             "terminalCursor.foreground": self.foreground_lighter,
             # "terminalOverviewRuler.border": "#000000",
             # "terminalOverviewRuler.cursorForeground": "#000000",
@@ -1228,7 +1231,7 @@ class UI:
             # "textBlockQuote.background": "#000000",
             # "textBlockQuote.border": "#000000",
             # "textCodeBlock.background": "#000000",
-            "textLink.activeForeground": self.accent_lighter,
+            "textLink.activeForeground": self.accent_highlight,
             "textLink.foreground": self.accent,
             # "textPreformat.background": "#000000",
             # "textPreformat.foreground": "#000000",
@@ -1239,7 +1242,7 @@ class UI:
         return {
             "titleBar.activeBackground": self.background,
             "titleBar.activeForeground": self.foreground_lighter + "99",
-            "titleBar.border": self.border_darker,
+            "titleBar.border": self.border,
             "titleBar.inactiveBackground": self.background_lighter + "99",
             "titleBar.inactiveForeground": self.foreground + "99",
         }
@@ -1283,6 +1286,6 @@ class UI:
 
     def windowColors(self):
         return {
-            "window.activeBorder": self.background_darker, 
+            "window.activeBorder": self.border, 
             "window.inactiveBorder": self.border_darker
         }

@@ -7,8 +7,8 @@
 | Color     | Use                                 |
 |-----------|-------------------------------------|
 | #AA5800 | Accent                              |
-| #EC7900 | Accent - Light                      |
-| #7D4200 | Accent - Dark                       |
+| #EC7900 | Accent - Highlight                  |
+| #7D4200 | Accent - Shadow                     |
 | #202126 | Background                          |
 | #3C3C3C | Background - Light                  |
 | #171717 | Background - Dark                   |
@@ -56,15 +56,15 @@
 
 | Color     | Use                                 |
 |-----------|-------------------------------------|
-| #f44a22 | Accent                              |
-| #f26e50 | Accent - Light                      |
-| #b8371a | Accent - Dark                       |
+| #fc6a0a | Accent                              |
+| #fc6a0a | Accent - Highlight                  |
+| #e74504 | Accent - Shadow                     |
 | #e4e2e3 | Background                          |
 | #fef8e8 | Background - Light                  |
 | #a8aaac | Background - Dark                   |
-| #1e293b | Border                              |
-| #334155 | Border - Light                      |
-| #0f172a | Border - Dark                       |
+| #a8aaac | Border                              |
+| #8c9494 | Border - Light                      |
+| #7b7c7c | Border - Dark                       |
 | #363636 | Foreground                          |
 | #666666 | Foreground - Light                  |
 | #161616 | Foreground - Dark                   |
