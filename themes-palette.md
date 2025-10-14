@@ -9,14 +9,14 @@
 | #AA5800 | Accent                              |
 | #EC7900 | Accent - Highlight                  |
 | #7D4200 | Accent - Shadow                     |
-| #202126 | Background                          |
-| #3C3C3C | Background - Light                  |
+| #202126 | Main Background                     |
+| #444444 | Main Border                         |
+| #CCCCCC | Main Foreground                     |
+| #3C3C3C | Alt Background                      |
+| #808080 | Alt Border                          |
+| #FFFFFF | Alt Foreground                      |
 | #171717 | Background - Dark                   |
-| #444444 | Border                              |
-| #808080 | Border - Light                      |
 | #000000 | Border - Dark                       |
-| #CCCCCC | Foreground                          |
-| #FFFFFF | Foreground - Light                  |
 | #555555 | Foreground - Dark                   |
 
 ### Levels
@@ -110,3 +110,35 @@
  #525863
  #FF06B5
  #FFEA16
+
+## CyberAlt
+
+#cccccc | foreground
+#2dc0e2 | variables, properties
+#2b80be | keywords
+#00e7ff | numbers
+#93c7ff | classes, constants
+#a5d9e2 | functions, methods
+#78ff9a | strings
+#9276c4 | operators, special functions
+#555555 | comments
+
+
+    "label": "CyberStar Pro Dark",
+    "path": "./themes/cyberstar-pro-dark-color-theme.json"
+
+    "label": "CyberStar Retro Dark",
+    "path": "./themes/cyberstar-retro-dark-color-theme.json"
+
+---
+
+    "label": "CyberStar Retro Future",
+    "path": "./themes/cyberstar-retro-future-color-theme.json"
+
+    "label": "CyberStar Retro",
+    "path": "./themes/cyberstar-retro-color-theme.json"
+
+---
+
+    "label": "CyberStar Dark Void",
+    "path": "./themes/cyberstar-dark-void-color-theme.json"
