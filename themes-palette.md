@@ -56,18 +56,18 @@
 
 | Color     | Use                                 |
 |-----------|-------------------------------------|
-| #fc6a0a | Accent                              |
-| #fc6a0a | Accent - Highlight                  |
-| #e74504 | Accent - Shadow                     |
-| #e4e2e3 | Background                          |
-| #fef8e8 | Background - Light                  |
-| #a8aaac | Background - Dark                   |
+| #7d4200 | Accent                              |
+| #EC7900 | Accent - Highlight                  |
+| #edeae8 | Background                          |
+| #cbcbcb | Background 2                        |
+| #202126 | Background 3                        |
 | #a8aaac | Border                              |
-| #8c9494 | Border - Light                      |
-| #7b7c7c | Border - Dark                       |
-| #363636 | Foreground                          |
-| #666666 | Foreground - Light                  |
-| #161616 | Foreground - Dark                   |
+| #c0c0c0 | Border 2                            |
+| #a0a0a0 | Border 3                            |
+| #191919 | Foreground                          |
+| #666666 | Foreground 2                        |
+| #cccccc | Foreground 3                        |
+| #202126 | Editor Background                   |
 
 ### Levels
 
