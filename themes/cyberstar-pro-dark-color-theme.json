@@ -4,18 +4,18 @@
     "colors": {
         "activityBar.activeBackground": "#7D4200",
         "activityBar.activeBorder": "#EC7900",
-        "activityBar.activeFocusBorder": "#222222",
+        "activityBar.activeFocusBorder": "#000000",
         "activityBar.background": "#202126",
         "activityBar.border": "#000000",
-        "activityBar.dropBorder": "#222222",
+        "activityBar.dropBorder": "#000000",
         "activityBar.foreground": "#CCCCCC",
         "activityBar.inactiveForeground": "#FFFFFF66",
         "activityBarBadge.background": "#7D4200",
         "activityBarBadge.foreground": "#FFFFFF",
-        "activityBarTop.activeBackground": "#202126",
-        "activityBarTop.activeBorder": "#222222",
+        "activityBarTop.activeBackground": "#7D4200",
+        "activityBarTop.activeBorder": "#EC7900",
         "activityBarTop.background": "#171717",
-        "activityBarTop.dropBorder": "#222222",
+        "activityBarTop.dropBorder": "#000000",
         "activityBarTop.foreground": "#CCCCCC",
         "activityBarTop.inactiveForeground": "#555555",
         "activityErrorBadge.foreground": "#fcfcfc",
@@ -344,7 +344,7 @@
             ],
             "settings": {
                 "fontStyle": "",
-                "foreground": "#A0927D"
+                "foreground": "#cccccc"
             }
         },
         {
@@ -367,7 +367,7 @@
             ],
             "settings": {
                 "fontStyle": "",
-                "foreground": "#555555"
+                "foreground": "#666666"
             }
         },
         {
@@ -434,7 +434,7 @@
             ],
             "settings": {
                 "fontStyle": "",
-                "foreground": "#A0927D"
+                "foreground": "#cccccc"
             }
         },
         {
@@ -462,7 +462,7 @@
             ],
             "settings": {
                 "fontStyle": "",
-                "foreground": "#A0A0A0"
+                "foreground": "#cccccc"
             }
         },
         {
@@ -509,7 +509,7 @@
             ],
             "settings": {
                 "fontStyle": "",
-                "foreground": "#888888"
+                "foreground": "#999999"
             }
         },
         {
@@ -573,7 +573,7 @@
             ],
             "settings": {
                 "fontStyle": "",
-                "foreground": "#CCCCCC"
+                "foreground": "#999999"
             }
         },
         {
@@ -611,7 +611,7 @@
             ],
             "settings": {
                 "fontStyle": "",
-                "foreground": "#ab7235"
+                "foreground": "#CBA357"
             }
         },
         {
@@ -648,7 +648,7 @@
             ],
             "settings": {
                 "fontStyle": "",
-                "foreground": "#CDC39D"
+                "foreground": "#A0927D"
             }
         },
         {
@@ -683,7 +683,120 @@
             ],
             "settings": {
                 "fontStyle": "",
-                "foreground": "#A0A0A0"
+                "foreground": "#cccccc"
+            }
+        },
+        {
+            "name": "CSS: Classes",
+            "scope": [
+                "entity.other.attribute-name.class",
+                "entity.other.attribute-name.class punctuation.definition.entity"
+            ],
+            "settings": {
+                "fontStyle": "",
+                "foreground": "#cccccc"
+            }
+        },
+        {
+            "name": "CSS: Ids",
+            "scope": [
+                "entity.other.attribute-name.id punctuation.definition.entity",
+                "source.css entity.other.attribute-name.id ",
+                "source.css.scss entity.other.attribute-name.id "
+            ],
+            "settings": {
+                "fontStyle": "",
+                "foreground": "#A0927D"
+            }
+        },
+        {
+            "name": "CSS: Numbers",
+            "scope": [
+                "constant.numeric"
+            ],
+            "settings": {
+                "fontStyle": "",
+                "foreground": "#CBA357"
+            }
+        },
+        {
+            "name": "CSS: Properties",
+            "scope": [
+                "meta.property-list entity.name.tag.css",
+                "meta.property-list meta.property-name",
+                "meta.property-list.scss meta.property-list.scss entity.name.tag.css",
+                "source.css.scss meta.property-list.scss entity.name.tag.css",
+                "support.type.property-name.css",
+                "support.type.vendored.property-name"
+            ],
+            "settings": {
+                "fontStyle": "",
+                "foreground": "#cccccc"
+            }
+        },
+        {
+            "name": "CSS: Pseudo Classes",
+            "scope": [
+                "entity.other.attribute-name.pseudo-class"
+            ],
+            "settings": {
+                "fontStyle": "",
+                "foreground": "#999999"
+            }
+        },
+        {
+            "name": "CSS: Pseudo Elements",
+            "scope": [
+                "entity.other.attribute-name.pseudo-element"
+            ],
+            "settings": {
+                "fontStyle": "",
+                "foreground": "#999999"
+            }
+        },
+        {
+            "name": "CSS: Reference",
+            "scope": [
+                "entity.name.tag.reference",
+                "meta.property-list"
+            ],
+            "settings": {
+                "fontStyle": "",
+                "foreground": "#999999"
+            }
+        },
+        {
+            "name": "CSS: Tags",
+            "scope": [
+                "entity.name.tag.css",
+                "meta.property-list.scss entity.name.tag.css"
+            ],
+            "settings": {
+                "fontStyle": "",
+                "foreground": "#cdc39d"
+            }
+        },
+        {
+            "name": "CSS: Units",
+            "scope": [
+                "keyword.other.unit"
+            ],
+            "settings": {
+                "fontStyle": "",
+                "foreground": "#CBA357"
+            }
+        },
+        {
+            "name": "CSS: Values",
+            "scope": [
+                "meta.attribute.style.html",
+                "meta.property-value.css",
+                "support.constant.font-name",
+                "support.constant.property-value"
+            ],
+            "settings": {
+                "fontStyle": "",
+                "foreground": "#CBA357"
             }
         },
         {
@@ -696,7 +809,7 @@
             ],
             "settings": {
                 "fontStyle": "",
-                "foreground": "#D5C28A"
+                "foreground": "#cdc39d"
             }
         },
         {
@@ -717,7 +830,7 @@
             ],
             "settings": {
                 "fontStyle": "",
-                "foreground": "#888888"
+                "foreground": "#666666"
             }
         },
         {
@@ -734,7 +847,7 @@
             ],
             "settings": {
                 "fontStyle": "",
-                "foreground": "#A0927D"
+                "foreground": "#A0A0A0"
             }
         },
         {
@@ -756,7 +869,7 @@
             ],
             "settings": {
                 "fontStyle": "bold",
-                "foreground": "#888888"
+                "foreground": "#ffffff"
             }
         },
         {
@@ -791,7 +904,7 @@
             ],
             "settings": {
                 "fontStyle": "",
-                "foreground": "#A0A0A0"
+                "foreground": "#CBA357"
             }
         },
         {
@@ -812,7 +925,7 @@
             ],
             "settings": {
                 "fontStyle": "italic",
-                "foreground": "#888888"
+                "foreground": "#cccccc"
             }
         },
         {
@@ -823,7 +936,7 @@
             ],
             "settings": {
                 "fontStyle": "",
-                "foreground": "#888888"
+                "foreground": "#CBA357"
             }
         },
         {
@@ -833,7 +946,7 @@
             ],
             "settings": {
                 "fontStyle": "",
-                "foreground": "#888888"
+                "foreground": "#cccccc"
             }
         },
         {
@@ -843,7 +956,7 @@
             ],
             "settings": {
                 "fontStyle": "",
-                "foreground": "#CCCCCC"
+                "foreground": "#999999"
             }
         },
         {
@@ -854,7 +967,7 @@
             ],
             "settings": {
                 "fontStyle": "",
-                "foreground": "#888888"
+                "foreground": "#A0927D"
             }
         },
         {
@@ -864,7 +977,7 @@
             ],
             "settings": {
                 "fontStyle": "",
-                "foreground": "#CCCCCC"
+                "foreground": "#999999"
             }
         },
         {
@@ -875,7 +988,7 @@
             ],
             "settings": {
                 "fontStyle": "",
-                "foreground": "#888888"
+                "foreground": "#999999"
             }
         },
         {
@@ -951,119 +1064,6 @@
             "settings": {
                 "fontStyle": "",
                 "foreground": "#CCCCCC"
-            }
-        },
-        {
-            "name": "CSS: Classes",
-            "scope": [
-                "entity.other.attribute-name.class",
-                "entity.other.attribute-name.class punctuation.definition.entity"
-            ],
-            "settings": {
-                "fontStyle": "",
-                "foreground": "#E9DBBF"
-            }
-        },
-        {
-            "name": "CSS: Ids",
-            "scope": [
-                "entity.other.attribute-name.id punctuation.definition.entity",
-                "source.css entity.other.attribute-name.id ",
-                "source.css.scss entity.other.attribute-name.id "
-            ],
-            "settings": {
-                "fontStyle": "",
-                "foreground": "#A0927D"
-            }
-        },
-        {
-            "name": "CSS: Numbers",
-            "scope": [
-                "constant.numeric"
-            ],
-            "settings": {
-                "fontStyle": "",
-                "foreground": "#CBA357"
-            }
-        },
-        {
-            "name": "CSS: Properties",
-            "scope": [
-                "meta.property-list entity.name.tag.css",
-                "meta.property-list meta.property-name",
-                "meta.property-list.scss meta.property-list.scss entity.name.tag.css",
-                "source.css.scss meta.property-list.scss entity.name.tag.css",
-                "support.type.property-name.css",
-                "support.type.vendored.property-name"
-            ],
-            "settings": {
-                "fontStyle": "",
-                "foreground": "#A0A0A0"
-            }
-        },
-        {
-            "name": "CSS: Pseudo Classes",
-            "scope": [
-                "entity.other.attribute-name.pseudo-class"
-            ],
-            "settings": {
-                "fontStyle": "",
-                "foreground": "#888888"
-            }
-        },
-        {
-            "name": "CSS: Pseudo Elements",
-            "scope": [
-                "entity.other.attribute-name.pseudo-element"
-            ],
-            "settings": {
-                "fontStyle": "",
-                "foreground": "#888888"
-            }
-        },
-        {
-            "name": "CSS: Reference",
-            "scope": [
-                "entity.name.tag.reference",
-                "meta.property-list"
-            ],
-            "settings": {
-                "fontStyle": "",
-                "foreground": "#888888"
-            }
-        },
-        {
-            "name": "CSS: Tags",
-            "scope": [
-                "entity.name.tag.css",
-                "meta.property-list.scss entity.name.tag.css"
-            ],
-            "settings": {
-                "fontStyle": "",
-                "foreground": "#cdc39d"
-            }
-        },
-        {
-            "name": "CSS: Units",
-            "scope": [
-                "keyword.other.unit"
-            ],
-            "settings": {
-                "fontStyle": "",
-                "foreground": "#A0A0A0"
-            }
-        },
-        {
-            "name": "CSS: Values",
-            "scope": [
-                "meta.attribute.style.html",
-                "meta.property-value.css",
-                "support.constant.font-name",
-                "support.constant.property-value"
-            ],
-            "settings": {
-                "fontStyle": "",
-                "foreground": "#ab7235"
             }
         }
     ]
