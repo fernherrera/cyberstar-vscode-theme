@@ -6,18 +6,17 @@
 
 | Color     | Use                                 |
 |-----------|-------------------------------------|
-| #AA5800 | Accent                              |
-| #EC7900 | Accent - Highlight                  |
-| #7D4200 | Accent - Shadow                     |
-| #202126 | Main Background                     |
-| #444444 | Main Border                         |
-| #CCCCCC | Main Foreground                     |
-| #3C3C3C | Alt Background                      |
-| #808080 | Alt Border                          |
-| #FFFFFF | Alt Foreground                      |
-| #171717 | Background - Dark                   |
-| #000000 | Border - Dark                       |
-| #555555 | Foreground - Dark                   |
+| #7D4200 | Accent                              |
+| #AA5800 | Accent - Highlight                  |
+| #202126 | Background                          |
+| #3C3C3C | Background 2                        |
+| #171717 | Background 3                        |
+| #444444 | Border                              |
+| #808080 | Border 2                            |
+| #000000 | Border 3                            |
+| #CCCCCC | Foreground                          |
+| #FFFFFF | Foreground 2                        |
+| #555555 | Foreground 3                        |
 
 ### Levels
 
@@ -30,23 +29,17 @@
 
 ### Syntax
 
-| Color     | Use                          |
-| ----------|------------------------------|
-| #A0927D | Accessors                    |
-| #E9DBBF | Classes                      |
-| #555555 | Comments                     |
-| #A0927D | Keywords                     |
-| #cdc39d | Constants                    |
-| #A0A0A0 | Decorators                   |
-| #D5C28A | Functions, Methods           |
-| #888888 | Operators, Special Functions |
-| #CCCCCC | Punctuation                  |
-| #A0A0A0 | Variables, Properties        |
-| #CDC39D | Types, Language Constants    |
-| #ab7235 | Strings                      |
-| #CBA357 | Numbers                      |
-| #A0A0A0 | Variables, Properties        |
-| #FA4A4A | Invalid - Illegal            |
+| Color     | Use                                          |
+| ----------|----------------------------------------------|
+| #cccccc | Accessors, Decorators, Variables, Properties |
+| #E9DBBF | Classes                                      |
+| #666666 | Comments                                     |
+| #A0927D | Keywords                                     |
+| #cdc39d | Constants                                    |
+| #D5C28A | Functions, Methods                           |
+| #999999 | Operators, Punctuation, Types                |
+| #a19179 | Strings                                      |
+| #CBA357 | Numbers                                      |
 
 -----
 
