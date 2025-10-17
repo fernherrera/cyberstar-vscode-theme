@@ -1,6 +1,6 @@
 {
     "$schema": "vscode://schemas/color-theme",
-    "name": "CyberStar Retro Future",
+    "name": "CyberStar - Retro Future",
     "colors": {
         "actionBar.toggledBackground": "#e4e4e4",
         "activityBar.activeBackground": "#7d4200",

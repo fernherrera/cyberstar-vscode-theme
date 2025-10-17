@@ -89,3 +89,46 @@
 | #8b0aab  | Numbers                     |
 | #A0A0A0 | Variables, Properties        |
 | #FA4A4A | Invalid - Illegal            |
+
+-----
+
+## OD - Dark
+
+### Editor
+
+| Color     | Use                                 |
+|-----------|-------------------------------------|
+| #7D4200 | Accent                              |
+| #AA5800 | Accent - Highlight                  |
+| #263525 | Background                          |
+| #222720 | Background 2                        |
+| #171717 | Background 3                        |
+| #394734 | Border                              |
+| #808080 | Border 2                            |
+| #000000 | Border 3                            |
+| #CCCCCC | Foreground                          |
+| #FFFFFF | Foreground 2                        |
+| #555555 | Foreground 3                        |
+
+### Levels
+
+| Color     | Use       |
+|-----------|-----------|
+| #E35535 | Errors    |
+| #69C3FF | Info      |
+| #3CEC85 | Success   |
+| #FF955C | Warning   |
+
+### Syntax
+
+| Color     | Use                                          |
+| ----------|----------------------------------------------|
+| #cccccc | Accessors, Decorators, Variables, Properties |
+| #E9DBBF | Classes                                      |
+| #666666 | Comments                                     |
+| #A0927D | Keywords                                     |
+| #cdc39d | Constants                                    |
+| #D5C28A | Functions, Methods                           |
+| #999999 | Operators, Punctuation, Types                |
+| #a19179 | Strings                                      |
+| #CBA357 | Numbers                                      |
