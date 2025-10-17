@@ -60,7 +60,6 @@
 | #191919 | Foreground                          |
 | #666666 | Foreground 2                        |
 | #cccccc | Foreground 3                        |
-| #202126 | Editor Background                   |
 
 ### Levels
 
