@@ -578,11 +578,11 @@
         "notebookStatusSuccessIcon.foreground": "#388a34",
 
         "notificationCenter.border": "#cbcbcb",
-        "notificationCenterHeader.background": "#cbcbcb",
+        "notificationCenterHeader.background": "#edeae8",
         "notificationCenterHeader.foreground": "#191919",
         "notificationLink.foreground": "#7d4200",
         "notifications.background": "#cbcbcb",
-        "notifications.border": "#cbcbcb",
+        "notifications.border": "#c0c0c0",
         "notifications.foreground": "#191919",
         "notificationsErrorIcon.foreground": "#f48771",
         "notificationsInfoIcon.foreground": "#75beff",
