@@ -1,11 +1,13 @@
 {
     "name": "cyberstar-vscode-theme",
-    "displayName": "CyberStar Theme",
-    "description": "A template for creating your own VS Code theme",
-    "version": "0.0.1",
+    "displayName": "CyberStar",
+    "description": "A toned down set of themes for Visual Studio Code.",
+    "version": "1.0.0",
+    "license": "MIT",
     "engines": {
         "vscode": "^1.51.0"
     },
+    "icon": "assets/icon.png",
     "categories": [
         "Themes"
     ],
