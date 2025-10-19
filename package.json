@@ -2,6 +2,7 @@
     "name": "cyberstar-vscode-theme",
     "displayName": "CyberStar",
     "description": "A toned down set of themes for Visual Studio Code.",
+    "publisher": "FernandoHerrera",
     "version": "1.0.0",
     "license": "MIT",
     "repository": {
