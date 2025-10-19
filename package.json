@@ -4,6 +4,15 @@
     "description": "A toned down set of themes for Visual Studio Code.",
     "version": "1.0.0",
     "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/fernherrera/cyberstar-vscode-theme"
+    },
+    "bugs": {
+        "url": "https://github.com/fernherrera/cyberstar-vscode-theme/issues",
+        "email": "fernandoherrera.adm@gmail.com"
+    },
+    "homepage": "https://github.com/fernherrera/cyberstar-vscode-theme",
     "engines": {
         "vscode": "^1.51.0"
     },
