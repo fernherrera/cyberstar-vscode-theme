@@ -6,15 +6,15 @@ Icon pack used in screenshots : [Nomo Dark Icons](https://github.com/be5invis/vs
 
 ## Pro Dark
 
-![Preview](https://raw.githubusercontent.com/fernherrera/cyberstar-vscode-theme/master/assets/screenshot-pro-dark.png)
+![Preview](https://raw.githubusercontent.com/fernherrera/cyberstar-vscode-theme/main/assets/screenshot-pro-dark.png)
 
 ## Retro Future
 
-![Preview](https://raw.githubusercontent.com/fernherrera/cyberstar-vscode-theme/master/assets/screenshot-retro-future.png)
+![Preview](https://raw.githubusercontent.com/fernherrera/cyberstar-vscode-theme/main/assets/screenshot-retro-future.png)
 
 ## Halo Master Chief
 
-![Preview](https://raw.githubusercontent.com/fernherrera/cyberstar-vscode-theme/master/assets/screenshot-halo-master-chief.png)
+![Preview](https://raw.githubusercontent.com/fernherrera/cyberstar-vscode-theme/main/assets/screenshot-halo-master-chief.png)
 
 
 ## 🚀 Installation
