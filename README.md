@@ -16,6 +16,10 @@ Icon pack used in screenshots : [Nomo Dark Icons](https://github.com/be5invis/vs
 
 ![Preview](https://raw.githubusercontent.com/fernherrera/cyberstar-vscode-theme/main/assets/screenshot-halo-master-chief.png)
 
+## Hacker
+
+![Preview](https://raw.githubusercontent.com/fernherrera/cyberstar-vscode-theme/main/assets/screenshot-hacker.png)
+
 
 ## 🚀 Installation
 

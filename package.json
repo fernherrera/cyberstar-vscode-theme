@@ -3,7 +3,7 @@
     "displayName": "CyberStar",
     "description": "A toned down set of themes for Visual Studio Code.",
     "publisher": "FernandoHerrera",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "license": "MIT",
     "repository": {
         "type": "git",
@@ -37,6 +37,11 @@
                 "label": "CyberStar - Halo Master Chief",
                 "uiTheme": "vs-dark",
                 "path": "./themes/cyberstar-halo-master-chief-color-theme.json"
+            },
+            {
+                "label": "CyberStar - Hacker",
+                "uiTheme": "vs-dark",
+                "path": "./themes/cyberstar-hacker-color-theme.json"
             }
         ]
     }
