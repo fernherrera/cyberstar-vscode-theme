@@ -42,6 +42,11 @@
                 "label": "CyberStar - Hacker",
                 "uiTheme": "vs-dark",
                 "path": "./themes/cyberstar-hacker-color-theme.json"
+            },
+            {
+                "label": "CyberStar - Terminal",
+                "uiTheme": "vs-dark",
+                "path": "./themes/cyberstar-terminal-color-theme.json"
             }
         ]
     }

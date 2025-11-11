@@ -20,6 +20,10 @@ Icon pack used in screenshots : [Nomo Dark Icons](https://github.com/be5invis/vs
 
 ![Preview](https://raw.githubusercontent.com/fernherrera/cyberstar-vscode-theme/main/assets/screenshot-hacker.png)
 
+## Terminal
+
+![Preview](https://raw.githubusercontent.com/fernherrera/cyberstar-vscode-theme/main/assets/screenshot-terminal.png)
+
 
 ## 🚀 Installation
 
